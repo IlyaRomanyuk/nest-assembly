@@ -1,6 +1,9 @@
 import { DataSource } from 'typeorm';
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
 import { config } from './index';
+import { join } from 'path';
+
+console.log(join(__dirname), '-----');
 
 export const options: PostgresConnectionOptions = {
   type: 'postgres',
